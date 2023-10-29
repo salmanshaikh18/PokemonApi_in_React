@@ -1,8 +1,11 @@
 import React from 'react'
+import Pokedex from './components/Pokedex/Pokedex'
 
 const App = () => {
   return (
-    <div>App</div>
+    <>
+      <Pokedex />
+    </>
   )
 }
 
