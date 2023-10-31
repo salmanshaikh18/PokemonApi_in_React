@@ -48,10 +48,17 @@ const PokemonList = () => {
 
   return (
     <div className='pokemon-list-wrapper'>
-      <div>Pokemon List</div>
+      <div className='pokemon-wrapper'>
       {(isLoading) ? 'Loading...' :
         pokemonList.map((p) => <Pokemon name={p.name} image={p.image} />)
       }
+      </div>
+
+      <div className='controls'>
+        <button>Previous</button>
+        <button>Next</button>
+      </div>
+      
     </div>
   )
 }

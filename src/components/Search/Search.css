@@ -8,4 +8,6 @@
     margin-top: 1rem;
     font-size: 18px;
     outline: none;
+    border: none;
+    box-shadow: 0 0 5px #fff;
 }
