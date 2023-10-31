@@ -9,8 +9,9 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 20px;
+    margin: 0 10px;
     margin-top: 20px;
+    /* gap: 20px; */
 }
 
 .controls {
