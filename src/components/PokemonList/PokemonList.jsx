@@ -68,8 +68,8 @@ const PokemonList = () => {
         <button disabled={prevUrl === null} onClick={() => setPOKEDEX_URL(prevUrl)}
         >Previous</button>
         <button disabled={nextUrl === null} onClick={() => setPOKEDEX_URL(nextUrl)}>Next</button>
-      </div>
-      
+        
+      </div>        
     </div>
   )
 }

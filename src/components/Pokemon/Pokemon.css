@@ -9,6 +9,7 @@
     margin: 25px 0;
     /* border: 2px solid salmon; */
     /* margin-right: 10px; */
+    border-radius: 10px;
 }
 
 .pokemon:hover {
