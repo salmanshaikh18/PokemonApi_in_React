@@ -39,4 +39,6 @@
 
 #pokemon-name {
     color: salmon;
+    text-align: center;
+    letter-spacing: 0.2rem;
 }
