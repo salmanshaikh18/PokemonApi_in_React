@@ -19,11 +19,11 @@ const PokemonDetails = () => {
 
       {
         pokemon.types && pokemon.similarPokemons && 
-        <div>
-          more {pokemon.types[0]} type pokemons
+        <div id="similarPokemonsWrapper">
+          <h2 style={{marginBottom: '20px', color: 'gray', textDecoration: 'underline'}} >more {pokemon.types[0]} type pokemons</h2>
 
           <ul>
-            {pokemon.similarPokemons.map((p) => <li key={p.pokemon.id}>{p.pokemon.name}</li>)
+            {pokemon.similarPokemons.map((p) => <li id="similarPokemons" key={p.pokemon.id}>{p.pokemon.name}</li>)
             }
           </ul>
         </div>
