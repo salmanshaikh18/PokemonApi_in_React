@@ -7,14 +7,6 @@ import Pokemon from '../Pokemon/Pokemon'
 
 const PokemonList = () => {
 
-  // const [pokemonList, setPokemonList] = useState([])
-  // const [isLoading, setIsLoading] = useState(true)
-
-  // const [POKEDEX_URL, setPOKEDEX_URL] = useState('https://pokeapi.co/api/v2/pokemon/')
-
-  // const [nextUrl, setNextUrl] = useState()
-  // const [prevUrl, setPrevUrl] = useState()
-
   const [pokemonListState, setPokemonListState] = useState({
     pokemonList: [],
     isLoading: true,
