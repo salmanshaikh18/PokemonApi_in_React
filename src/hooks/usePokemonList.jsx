@@ -13,8 +13,6 @@ const usePokemonList = () => {
   })
 
   const downloadPokemons = async () => {
-    // setIsLoading(true)
-
 
     // iterating over the array of pokemons, and using their url, to create an array of promises 
     // that will download those 20 pokemons

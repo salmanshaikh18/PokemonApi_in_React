@@ -2,9 +2,9 @@ import { useParams } from 'react-router-dom'
 import './PokemonDetails.css'
 import usePokemonDetails from '../../hooks/usePokemonDetails';
 
-const PokemonDetails = () => {
+const PokemonDetails = ({ pokemonName }) => {
   const { id } = useParams();
-  const [pokemon] = usePokemonDetails(id)
+  const [pokemon] = usePokemonDetails(id, pokemonName)
 
   return (
     <div className='pokemon-details-wrapper'>
@@ -23,7 +23,7 @@ const PokemonDetails = () => {
           <h2 style={{marginBottom: '20px', color: 'gray', textDecoration: 'underline', cursor: 'pointer'}} >more {pokemon.types[0]} type pokemons</h2>
 
           <ul id="similarPokemonsLists">
-            {pokemon.similarPokemons.map((p) => <li id="similarPokemons" key={p.pokemon.id}>{p.pokemon.name}</li>)
+            {pokemon.similarPokemons.map((p) => <li id="similarPokemons" key={p.pokemon.url}>{p.pokemon.name}</li>)
             }
           </ul>
         </div>
